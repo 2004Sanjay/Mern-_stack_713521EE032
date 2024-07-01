@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        * {
+            font-family: raleway;
+        }
+
+        .pixel {
+            font-size: 24px;
+            font-weight: lighter;
+        }
+
+        .percent {
+            font-size: 150%;
+            font-weight: lighter;
+        }
+
+        .ems {
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+        .textInd{
+            margin: 20px;
+            border: 3px red solid;
+        }
+
+        .textInd > p{
+            text-indent: 100px;
+            text-shadow: 1px 1px 2px  red ;
+        }
+        .textInd>p::first-letter{
+            color:blue;
+            font-size: 200%;
+        }
+        .textInd>p::first-line{
+            color: red;
+            font-size: 150%;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .textInd>p::shadow{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="2px">
+        <tr>
+            <td><img src="https://th.bing.com/th/id/OIP.pIdZNZDMfxbUp2mBTjrVdgHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="80px" width="80px" alt=""></td>
+            <td style="vertical-align: top">Lorem, ipsum dolor. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima distinctio consequuntur cupiditate ratione quo id impedit maxime iure, asperiores vero. consectetur, adipisicing elit. Ab, totam!</td>
+        </tr>
+    </table>
+
+    <div class="textInd">
+        <img src="https://www.picsum.photos/100/100" alt="">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aliquid nihil exercitationem cumque omnis deleniti esse quo iure vel consequuntur!
+        </p>
+    </div>
+    <!-- I'm outside
+    <h1 class="pixel">I'm pixels</h1>
+    <h1 class="percent">I'm percents</h1>
+    <h1 class="ems">I'm ems</h1> -->
+</body>
+
+</html>

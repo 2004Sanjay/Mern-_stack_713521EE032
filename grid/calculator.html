@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        width: 275px;
+        height: 400px;
+        background: blue;
+        border: 10% solid black;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
+        padding: 5px;
+
+    }
+    button{
+        border-radius: 25%;
+    }
+    input{
+        grid-column: 1/-1;
+        width: 270px;
+        height: 100px;
+        margin-bottom: 10px;
+        text-align: right;
+        border: none;
+        font-size:xx-large;
+        border: 2px solid black;
+    }
+    .btcolor{
+        background-color: gray;
+    }
+    .btcolor1{
+        background-color: orange;
+    }
+</style>
+<body>
+     
+    <h1><center>CALCULATOR</center></h1>
+    <center></center>
+    <div class="parent">
+        <input type="text" placeholder="0" id="disp1">
+        <button class="btcolor" onclick="clearDisplay()">AC</button>
+        <button class="btcolor" onclick="san('%')">%</button>
+        <button class="btcolor" onclick="san('.')"><b>.</b></button>
+        <button class="btcolor" onclick="san('/')">/</button>
+        <button onclick="san('7')">7</button>
+        <button onclick="san('8')">8</button>
+        <button onclick="san('9')">9</button>
+        <button class="btcolor" onclick="san('*')">*</button>
+        <button onclick="san('4')">4</button>
+        <button onclick="san('5')">5</button>
+        <button onclick="san('6')">6</button>
+        <button class="btcolor" onclick="san('-')">-</button>
+        <button onclick="san('1')">1</button>
+        <button onclick="san('2')">2</button>
+        <button onclick="san('3')">3</button>
+        <button class="btcolor" onclick="san('+')">+</button>
+        <button onclick="san('000')">000</button>
+        <button onclick="san('00')">00</button>
+        <button onclick="san('0')">0</button>
+        <button class="btcolor1" onclick="calculate()">=</button>
+    </div>
+    <script>
+
+        var disp=document.getElementById("disp1")
+
+        function san(value){
+            disp.value+=value;
+        }
+        function clearDisplay(){
+            disp.value="";
+        }
+        function calculate(){
+            var equation=disp.value;
+            try{
+            disp.value=eval(equation);
+            }
+            catch(e){
+                disp.value='Error';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .skills{
+        background-color: rgb(193, 181, 223);
+        padding: 5px;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 5px;
+        gap: 1em;
+    }
+</style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="jumbotron text-center" background-color="btn-outline-warning">
+        <h1 class="display-4">Hello, I'm Sanjay P</h1>
+        <p class="lead">A passionate Electrical and Electronics Engineer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>A hardworking individual seeking a challenging position to showcase my skills, contribute to organizational growth, and enhance my capabilities.</p>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="container">
+        <h2 class="card-title">Technical skills</h2>
+            <div class="skills">C programming</div>
+            
+            <div class="skills">HTML</div>
+            <div class="skills">CSS</div>
+            <div class="skills">Bootstrap</div>
+            <div class="skills">Javascript</div>
+    
+     <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-10">
+                <div class="card">
+                    <img src="Battery.jfif" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Battery level indicator</p>
+                        <!-- Button to trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">
+                            View Project 1
+                        </button>
+
+                        <!-- Modal Structure -->
+                        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Detailed information about Project 1.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="card">
+                    <img src="download1.jfif" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">LoRa based forest fire detector</p>
+                        <!-- Button to trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">
+                            View Project 2
+                        </button>
+
+                        <!-- Modal Structure -->
+                        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Detailed information about Project 1.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="card">
+                    <img src="Electricity-Meter.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Smart energy meter</p>
+                        <!-- Button to trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">
+                            View Project 3
+                        </button>
+
+                        <!-- Modal Structure -->
+                        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Detailed information about Project 1.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light btn-outline-warning">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-left">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;copyright  2024 &copy; Sanjay P</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
